@@ -1,7 +1,12 @@
-i#!/bin/bash
+#!/bin/bash
 
 cd "$(dirname "$0")"
-ln -s ./.vimrc ../.vimrc
+
+mkdir ./bundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+rm ~/.vimrc
+ln -s ~/.vim/.vimrc ~/.vimrc
 vim +PluginInstall +qall
 
 cd ./bundle/omnisharp-vim
