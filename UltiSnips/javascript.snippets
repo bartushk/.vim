@@ -1,0 +1,28 @@
+snippet desc
+describe('$1', function(){
+	it('$2', function($3){
+		$0
+	});
+});
+endsnippet
+
+snippet it
+it('$1', function($2){
+	$0
+});
+endsnippet
+
+snippet ajax
+$.ajax({
+    method: "$1",
+    url: "$2",
+    contentType: "application/json",
+    data: $3,
+    success: function(arg){
+        $0
+    },
+    error: function(arg){
+        console.error(arg);
+    }
+});
+endsnippet
