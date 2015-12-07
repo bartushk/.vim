@@ -42,6 +42,8 @@ Plugin 'davidhalter/jedi-vim'
 "Snipets
 Plugin 'SirVer/ultisnips'
 
+"Web browser
+Plugin 'yuratomo/w3m.vim'
 
 call vundle#end() 
 set autoindent
