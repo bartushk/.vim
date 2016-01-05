@@ -1,5 +1,3 @@
-# .vim
-
 ##Synposis
 This is a repo for my vim settings.
 
