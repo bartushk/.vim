@@ -52,6 +52,7 @@ colorscheme jellybeans
 
 "ignores
 let g:ctrlp_custom_ignore = '*/node_modules/*'
+let g:ctrlp_custom_ignore = '*/build/*'
 
 "Nnoremap
 nnoremap <F5> :NERDTreeToggle<CR>
@@ -67,6 +68,7 @@ let g:UltiSnipsJumpForwardTrigger = "<c-f>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-d>"
 
 
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 " OmniSharpStuff won't work without this settings
 "This is the default value, setting it isn't actually necessary
