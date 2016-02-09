@@ -21,6 +21,6 @@ cd ../vimproc.vim
 make
 
 cd ../YouCompleteMe
-./install.sh --omnisharp-completer --clang-completer
+./install.sh --omnisharp-completer --clang-completer --racer-completer
 
 

@@ -31,6 +31,10 @@ Plugin 'walm/jshint.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'wavded/vim-stylus'
 
+"Rust language
+Plugin 'rust-lang/rust.vim'
+let g:rustfmt_autosave = 1
+
 "Omnisharp
 Plugin 'tpope/vim-dispatch'
 Plugin 'scrooloose/syntastic'
@@ -51,8 +55,8 @@ set number
 colorscheme jellybeans
 
 "ignores
-let g:ctrlp_custom_ignore = '*/node_modules/*'
-let g:ctrlp_custom_ignore = '*/build/*'
+let g:ctrlp_custom_ignore = '*node_modules/*'
+let g:ctrlp_custom_ignore = '*build/*'
 
 "Nnoremap
 nnoremap <F5> :NERDTreeToggle<CR>
@@ -69,6 +73,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-d>"
 
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_rust_src_path = '/usr/local/src/rustc-1.6.0/src'
 
 " OmniSharpStuff won't work without this settings
 "This is the default value, setting it isn't actually necessary
