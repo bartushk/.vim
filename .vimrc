@@ -33,7 +33,6 @@ Plugin 'wavded/vim-stylus'
 
 "Rust language
 Plugin 'rust-lang/rust.vim'
-let g:rustfmt_autosave = 1
 
 "Omnisharp
 Plugin 'tpope/vim-dispatch'
