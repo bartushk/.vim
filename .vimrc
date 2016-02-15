@@ -64,6 +64,9 @@ nnoremap <c-t> :VimShellPop<CR>
 
 "Maps
 map <space> <Plug>(easymotion-prefix)
+map W w
+map Wq wq
+map WQ wq
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<c-f>"
