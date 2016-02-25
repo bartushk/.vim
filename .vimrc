@@ -48,6 +48,9 @@ Plugin 'SirVer/ultisnips'
 "Web browser
 Plugin 'yuratomo/w3m.vim'
 
+"Opencl stuff
+Plugin 'petRUShka/vim-opencl'
+
 call vundle#end() 
 set autoindent
 set number
@@ -64,9 +67,10 @@ nnoremap <c-t> :VimShellPop<CR>
 
 "Maps
 map <space> <Plug>(easymotion-prefix)
-map W w
-map Wq wq
-map WQ wq
+command WQ wq
+command Wq wq
+command W w
+command Q q
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<c-f>"
