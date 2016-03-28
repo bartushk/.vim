@@ -20,6 +20,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'airblade/vim-gitgutter'
 
 "Vimshell
 Plugin 'Shougo/vimproc.vim'
