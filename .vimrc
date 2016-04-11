@@ -52,7 +52,6 @@ Plugin 'petRUShka/vim-opencl'
 Plugin 'hsanson/vim-android'
 Plugin 'artur-shaik/vim-javacomplete2'
 
-
 call vundle#end() 
 set autoindent
 set number
@@ -69,7 +68,7 @@ let g:ctrlp_custom_ignore = '*build/*'
 "Nnoremap
 nnoremap <F5> :NERDTreeToggle<CR>
 nnoremap <c-f> :CtrlP<CR>
-nnoremap <c-t> :VimShellPop<CR>
+nnoremap <c-t> :<CR>
 
 "Maps
 map <space> <Plug>(easymotion-prefix)
