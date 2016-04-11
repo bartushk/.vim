@@ -22,10 +22,6 @@ Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 
-"Vimshell
-Plugin 'Shougo/vimproc.vim'
-Plugin 'Shougo/vimshell.vim'
-
 "Javascript 
 Plugin 'ternjs/tern_for_vim'
 Plugin 'walm/jshint.vim'
