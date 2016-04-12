@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 syntax on
 filetype off
+set nowrap
 
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 " set the runtime path to include Vundle and initialize
@@ -156,10 +157,6 @@ augroup omnisharp_commands
     autocmd FileType cs nnoremap <leader>fx :OmniSharpFixUsings<cr>
     autocmd FileType cs nnoremap <leader>tt :OmniSharpTypeLookup<cr>
     autocmd FileType cs nnoremap <leader>dc :OmniSharpDocumentation<cr>
-    "navigate up by method/property/field
-    autocmd FileType cs nnoremap <C-K> :OmniSharpNavigateUp<cr>
-    "navigate down by method/property/field
-    autocmd FileType cs nnoremap <C-J> :OmniSharpNavigateDown<cr>
 
 augroup END
 
