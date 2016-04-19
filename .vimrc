@@ -160,6 +160,9 @@ augroup omnisharp_commands
     autocmd FileType cs nnoremap <leader>tt :OmniSharpTypeLookup<cr>
     autocmd FileType cs nnoremap <leader>dc :OmniSharpDocumentation<cr>
 
+    autocmd FileType cs nnoremap <leader>k :OmniSharpNavigateUp<cr>
+    autocmd FileType cs nnoremap <leader>j :OmniSharpNavigateDown<cr>
+
 augroup END
 
 
