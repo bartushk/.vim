@@ -59,6 +59,8 @@ set number
 colorscheme jellybeans
 
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
+nmap <F4> <Plug>(JavaComplete-Imports-Add)
+imap <F4> <Plug>(JavaComplete-Imports-Add)
 let g:gradle_path = '/usr/share/gradle'
 let g:android_sdk_path = '/home/bartushk/tools/android-sdk-linux'
 
