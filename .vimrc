@@ -49,15 +49,24 @@ Plugin 'yuratomo/w3m.vim'
 "Opencl stuff
 Plugin 'petRUShka/vim-opencl'
 
+
 call vundle#end() 
 set autoindent
 set number
 colorscheme jellybeans
 
+"Run any init.vim script in directory
+if findfile("init.vim", ".") == "init.vim"
+    autocmd VimEnter * source init.vim
+endif
+
+"eclim completion
+let g:EclimCompletionMethod = 'omnifunc'
 
 "ignores
-let g:ctrlp_custom_ignore = '*node_modules/*'
-let g:ctrlp_custom_ignore = '*build/*'
+let g:ctrlp_custom_ignore = 'node_modules/'
+let g:ctrlp_custom_ignore = 'build/'
+let g:ctrlp_custom_ignore = 'bin/'
 
 "Nnoremap
 nnoremap <F5> :NERDTreeToggle<CR>
