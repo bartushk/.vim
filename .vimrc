@@ -60,8 +60,9 @@ if findfile("init.vim", ".") == "init.vim"
     autocmd VimEnter * source init.vim
 endif
 
-"eclim completion
+"eclim completion and bindings
 let g:EclimCompletionMethod = 'omnifunc'
+nnoremap <F4> :JavaImport<CR>
 
 "ignores
 let g:ctrlp_custom_ignore = 'node_modules/'
