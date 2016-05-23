@@ -22,6 +22,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'rdnetto/YCM-Generator'
 
 "Javascript 
 Plugin 'ternjs/tern_for_vim'
