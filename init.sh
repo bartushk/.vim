@@ -10,11 +10,6 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 ln -s ~/.vim/.tmux.conf ~/.tmux.conf
 vim +PluginInstall +qall
 
-cd ./bundle/omnisharp-vim
-git submodule update --init --recursive
-cd server
-xbuild
-
 cd ../../tern_for_vim
 npm install
 
@@ -22,6 +17,6 @@ cd ../vimproc.vim
 make
 
 cd ../YouCompleteMe
-./install.sh --omnisharp-completer --clang-completer --racer-completer
+./install.sh --clang-completer --racer-completer
 
 
