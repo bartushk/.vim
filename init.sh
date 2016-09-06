@@ -10,7 +10,7 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 ln -s ~/.vim/.tmux.conf ~/.tmux.conf
 vim +PluginInstall +qall
 
-cd ../../tern_for_vim
+cd ./bundle/tern_for_vim
 npm install
 
 cd ../vimproc.vim
