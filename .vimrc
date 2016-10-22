@@ -48,6 +48,9 @@ Plugin 'yuratomo/w3m.vim'
 "Opencl stuff
 Plugin 'petRUShka/vim-opencl'
 
+"Ruby
+Plugin 'tpope/vim-rails'
+
 
 call vundle#end() 
 set autoindent
@@ -64,9 +67,7 @@ let g:EclimCompletionMethod = 'omnifunc'
 nnoremap <F4> :JavaImport<CR>
 
 "ignores
-let g:ctrlp_custom_ignore = 'node_modules/'
-let g:ctrlp_custom_ignore = 'build/'
-let g:ctrlp_custom_ignore = 'bin/'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
 "Nnoremap
 nnoremap <F5> :NERDTreeToggle<CR>
