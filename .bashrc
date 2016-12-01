@@ -118,4 +118,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-PATH=$PATH:~/vim/scripts
+PATH=$PATH:~/.vim/scripts
