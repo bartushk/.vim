@@ -16,8 +16,5 @@ vim +PluginInstall +qall
 cd ./bundle/tern_for_vim
 npm install
 
-cd ../vimproc.vim
-make
-
 cd ../YouCompleteMe
 ./install.sh --clang-completer --racer-completer --gocode-completer

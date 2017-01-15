@@ -4,6 +4,7 @@ filetype off
 set nowrap
 
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -47,6 +48,9 @@ Plugin 'petRUShka/vim-opencl'
 
 "Go
 Plugin 'fatih/vim-go'
+
+"Protobuf
+Plugin 'uarun/vim-protobuf'
 
 
 call vundle#end() 
