@@ -42,14 +42,11 @@ Plugin 'davidhalter/jedi-vim'
 "Snipets
 Plugin 'SirVer/ultisnips'
 
-"Web browser
-Plugin 'yuratomo/w3m.vim'
-
 "Opencl stuff
 Plugin 'petRUShka/vim-opencl'
 
-"Ruby
-Plugin 'tpope/vim-rails'
+"Go
+Plugin 'fatih/vim-go'
 
 
 call vundle#end() 

@@ -20,4 +20,4 @@ cd ../vimproc.vim
 make
 
 cd ../YouCompleteMe
-./install.sh --clang-completer --racer-completer
+./install.sh --clang-completer --racer-completer --gocode-completer
