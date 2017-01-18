@@ -3,5 +3,6 @@ tmux new -s 'devi' -d
 tmux send vim ENTER
 tmux new-window 'bash'
 tmux split-window -v
+tmux split-window -h
 tmux select-pane -U
 tmux -2 attach-session -d
