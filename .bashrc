@@ -119,3 +119,17 @@ if ! shopt -oq posix; then
 fi
 
 PATH=$PATH:~/.vim/scripts
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /home/bartushk/tools/google-cloud-sdk/path.bash.inc ]; then
+  source "$HOME/tools/google-cloud-sdk/path.bash.inc"
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /home/bartushk/tools/google-cloud-sdk/completion.bash.inc ]; then
+  source "$HOME/tools/google-cloud-sdk/completion.bash.inc"
+fi
+
+export GOPATH=$HOME/.go:$HOME/workspace/memmi/web/
+export PATH=$PATH:$HOME/.go/bin
+export LD_LIBRARY_PATH=/usr/local/lib
