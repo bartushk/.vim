@@ -1,6 +1,5 @@
-set nocompatible              " be iMproved, required
+set nocompatible 
 syntax on
-filetype off
 set nowrap
 
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
@@ -62,10 +61,6 @@ colorscheme jellybeans
 if findfile("init.vim", ".") == "init.vim"
     autocmd VimEnter * source init.vim
 endif
-
-"eclim completion and bindings
-let g:EclimCompletionMethod = 'omnifunc'
-nnoremap <F4> :JavaImport<CR>
 
 "ignores
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
