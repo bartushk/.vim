@@ -51,6 +51,9 @@ Plugin 'fatih/vim-go'
 "Protobuf
 Plugin 'uarun/vim-protobuf'
 
+"C
+Plugin 'rhysd/vim-clang-format'
+
 
 call vundle#end() 
 set autoindent
@@ -107,3 +110,4 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-d>"
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_rust_src_path = '/usr/local/src/rustc-1.10.0/src'
+autocmd FileType c,cpp ClangFormatAutoEnable
