@@ -1,4 +1,6 @@
 set nocompatible 
+set nobackup
+set noswapfile
 syntax on
 set nowrap
 
@@ -31,6 +33,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'wavded/vim-stylus'
 
 "Rust language
+Plugin 'racer-rust/vim-racer'
 Plugin 'rust-lang/rust.vim'
 
 Plugin 'tpope/vim-dispatch'
@@ -54,6 +57,9 @@ Plugin 'uarun/vim-protobuf'
 "C
 Plugin 'rhysd/vim-clang-format'
 
+"clang
+Plugin 'rhysd/vim-clang-format'
+
 
 call vundle#end() 
 set autoindent
@@ -66,7 +72,7 @@ if findfile("init.vim", ".") == "init.vim"
 endif
 
 "ignores
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|build)|(\.(swp|ico|git|svn))$'
 
 "Nnoremap
 nnoremap <F5> :NERDTreeToggle<CR>
@@ -80,28 +86,6 @@ command Wq wq
 command W w
 command Q q
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 5
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ['eslint']
-
-let g:syntastic_error_symbol = '❌'
-let g:syntastic_style_error_symbol = '⁉️'
-let g:syntastic_warning_symbol = '⚠️'
-let g:syntastic_style_warning_symbol = '💩'
-
-highlight link SyntasticErrorSign SignColumn
-highlight link SyntasticWarningSign SignColumn
-highlight link SyntasticStyleErrorSign SignColumn
-highlight link SyntasticStyleWarningSign SignColumn
-
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<c-f>"
 let g:UltiSnipsJumpForwardTrigger = "<c-f>"
@@ -109,5 +93,5 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-d>"
 
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-let g:ycm_rust_src_path = '/usr/local/src/rustc-1.10.0/src'
+let g:ycm_rust_src_path = '/usr/local/src/rustc-1.18.0/src'
 autocmd FileType c,cpp ClangFormatAutoEnable
