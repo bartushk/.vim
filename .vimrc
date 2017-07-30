@@ -3,6 +3,7 @@ set nobackup
 set noswapfile
 syntax on
 set nowrap
+set clipboard=unnamedplus
 
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 
@@ -55,6 +56,9 @@ Plugin 'uarun/vim-protobuf'
 
 "C
 Plugin 'rhysd/vim-clang-format'
+
+"Lua
+Plugin 'tbastos/vim-lua'
 
 
 call vundle#end() 
