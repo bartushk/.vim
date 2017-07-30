@@ -134,3 +134,4 @@ export GOPATH=$HOME/.go:$HOME/workspace/memmi/web/
 export PATH=$PATH:$HOME/.go/bin
 export PATH="$HOME/.cargo/bin:$PATH"
 export LD_LIBRARY_PATH=/usr/local/lib
+alias mk='./mk'
