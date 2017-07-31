@@ -72,7 +72,7 @@ if findfile("init.vim", ".") == "init.vim"
 endif
 
 "ignores
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|build)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|build|bin)|(\.(swp|ico|git|svn))$'
 
 "Nnoremap
 nnoremap <F5> :NERDTreeToggle<CR>
