@@ -60,6 +60,9 @@ Plugin 'rhysd/vim-clang-format'
 "Lua
 Plugin 'tbastos/vim-lua'
 
+"GLSL
+Plugin 'tikhomirov/vim-glsl'
+
 
 call vundle#end() 
 set autoindent
