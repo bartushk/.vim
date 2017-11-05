@@ -94,4 +94,5 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-d>"
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_rust_src_path = '/usr/local/src/rust-1.18.0/src'
+let g:ultisnips_python_style = 'google'
 autocmd FileType c,cpp,cc,h,hh ClangFormatAutoEnable

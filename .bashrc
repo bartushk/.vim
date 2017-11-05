@@ -18,8 +18,11 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTTIMEFORMAT='%F %T '
+HISTFILESIZE=-1
+HISTSIZE=-1
+HISTCONTROL=ignoredups
+HISTIGNORE=?:??
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -135,3 +138,5 @@ export PATH=$PATH:$HOME/.go/bin
 export PATH="$HOME/.cargo/bin:$PATH"
 export LD_LIBRARY_PATH=/usr/local/lib
 alias mk='./mk'
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
