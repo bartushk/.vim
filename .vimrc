@@ -4,8 +4,10 @@ set noswapfile
 syntax on
 set nowrap
 set clipboard=unnamedplus
+set shell=/bin/bash
+set colorcolumn=80
 
-set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -26,43 +28,19 @@ Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'rdnetto/YCM-Generator'
-
-"Javascript 
-Plugin 'ternjs/tern_for_vim'
-Plugin 'walm/jshint.vim'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'wavded/vim-stylus'
-
-"Rust language
-Plugin 'rust-lang/rust.vim'
-
 Plugin 'tpope/vim-dispatch'
 Plugin 'scrooloose/syntastic'
-
-"Python
-Plugin 'davidhalter/jedi-vim'
 
 "Snipets
 Plugin 'SirVer/ultisnips'
 
-"Opencl stuff
-Plugin 'petRUShka/vim-opencl'
+"Python
+Plugin 'davidhalter/jedi-vim'
+Plugin 'tell-k/vim-autopep8'
 
-"Go
-Plugin 'fatih/vim-go'
-
-"Protobuf
-Plugin 'uarun/vim-protobuf'
-
-"C
+"Rust language
+Plugin 'rust-lang/rust.vim'
 Plugin 'rhysd/vim-clang-format'
-
-"Lua
-Plugin 'tbastos/vim-lua'
-
-"GLSL
-Plugin 'tikhomirov/vim-glsl'
-
 
 call vundle#end() 
 set autoindent
@@ -75,7 +53,7 @@ if findfile("init.vim", ".") == "init.vim"
 endif
 
 "ignores
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|build|bin)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules/|target/|dist/|build/|bin/)|(\.(swp|ico|git|svn))$'
 
 "Nnoremap
 nnoremap <F5> :NERDTreeToggle<CR>
@@ -96,6 +74,15 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-d>"
 
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-let g:ycm_rust_src_path = '/usr/local/src/rust-1.18.0/src'
+let g:ycm_rust_src_path = '~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
 let g:ultisnips_python_style = 'google'
-autocmd FileType c,cpp,cc,h,hh ClangFormatAutoEnable
+
+autocmd FileType rust nnoremap <Leader>f :RustFmt<CR>
+
+
+" autopep stuff
+let g:python_recommended_style = 0
+let g:autopep8_indent_size=2
+let g:autopep8_disable_show_diff=1
+autocmd FileType python nnoremap <leader>f  :call Autopep8()<CR>
+let g:autopep8_max_line_length=79

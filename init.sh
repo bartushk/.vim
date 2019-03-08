@@ -13,8 +13,5 @@ ln -s ~/.vim/.tmux.conf ~/.tmux.conf
 ln -s ~/.vim/.bashrc ~/.bashrc
 vim +PluginInstall +qall
 
-cd ./bundle/tern_for_vim
-npm install
-
 cd ../YouCompleteMe
-./install.py --clang-completer --racer-completer --gocode-completer
+./install.py --racer-completer
